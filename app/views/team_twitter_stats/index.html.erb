@@ -1,0 +1,30 @@
+<script>
+$(document).ready(function() {
+    $('#twitter_stats').dataTable();
+} );  
+</script>
+
+<h3>Twitter Stats</h3>
+<hr />
+<table class="table" id="twitter_stats">
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Followers</th>
+      <th>Following</th>
+      <th>Statuses Count</th>    
+      <th>Created At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @team_twitter_stats.each do |team_twitter_stat| %>
+      <tr>
+        <td><%= team_twitter_stat.team.name %></td>
+        <td><%= number_with_delimiter(team_twitter_stat.followers, :delimiter => ',') %></td>
+        <td><%= number_with_delimiter(team_twitter_stat.following, :delimiter => ',') %></td>
+        <td><%= number_with_delimiter(team_twitter_stat.statuses_count, :delimiter => ',') %></td>    
+        <td><%= team_twitter_stat.created_at %></td>    
+      </tr>
+    <% end %>
+  </tbody>
+</table>

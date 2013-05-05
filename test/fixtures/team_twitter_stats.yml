@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  team: 
+  followers: 1
+  following: 1
+
+two:
+  team: 
+  followers: 1
+  following: 1

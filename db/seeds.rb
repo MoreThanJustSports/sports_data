@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Team.create([
+    {:name => 'Rayados', :twitter_handle => 'RayadosCom'},
+    {:name => 'Tigres', :twitter_handle => 'TigresOficial'},
+    {:name => 'Pumas', :twitter_handle => 'ClubUniversidad'},
+    {:name => 'Real Madrid', :twitter_handle => 'realmadrid'}
+])
