@@ -1,6 +1,10 @@
 SportsData::Application.routes.draw do
+  devise_for :users
+
+  mount RailsAdmin::Engine => '/labs_admin', :as => 'rails_admin'
+
   resources :team_twitter_stats, :only => [:index]
-  resources :teams
+  resources :teams, :only => [:index]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -4,16 +4,12 @@ $(document).ready(function() {
 } );  
 </script>
 <h3>Teams</h3>
-<%= link_to 'New Team', new_team_path %>
 <hr />
 <table class="table" id="teams">
   <thead>
     <tr>
       <th>Name</th>
       <th>Twitter handle</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -21,9 +17,6 @@ $(document).ready(function() {
       <tr>
         <td><%= team.name %></td>
         <td><%= team.twitter_handle %></td>
-        <td><%= link_to 'Show', team %></td>
-        <td><%= link_to 'Edit', edit_team_path(team) %></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
