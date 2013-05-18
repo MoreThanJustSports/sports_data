@@ -22,6 +22,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -39,5 +42,5 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-
-gem "devise"
+gem 'devise'
+gem 'whenever', :require => false

@@ -6,6 +6,7 @@ SportsData::Application.routes.draw do
   resources :team_twitter_stats, :only => [:index]
   resources :teams, :only => [:index]
 
+  root :to => 'teams#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
